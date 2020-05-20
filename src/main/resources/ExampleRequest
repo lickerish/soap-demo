@@ -1,0 +1,13 @@
+# POST http://localhost:8080/ws
+
+HEADERS: Content-Type = text/xml
+BODY: XML
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+			   xmlns:std="http://www.lickerish.com/soap">
+  <soap:Body>
+    <std:getEmployee>
+      <id>1</id>
+    </std:getEmployee>
+  </soap:Body>
+</soap:Envelope>
